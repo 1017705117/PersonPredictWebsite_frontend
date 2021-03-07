@@ -7,7 +7,10 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI);
 Vue.config.productionTip = false
-
+//视频播放插件
+import Video from 'video.js'
+import 'video.js/dist/video-js.css'
+Vue.prototype.$video = Video
 
 /* eslint-disable no-new */
 new Vue({

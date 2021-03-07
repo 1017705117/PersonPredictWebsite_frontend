@@ -47,21 +47,50 @@
     </el-aside>
     <el-main>
       <div>
-        Main 
+
+          <Content :style="{margin: '20px 160px 0'}">
+            <VideoPlay/>
+          </Content>
+
       </div>
     </el-main>
   </el-container>
 </template>
 
-<style scope>
-
+<style scoped>
+.layout{
+  border: 0px solid #dcdee2;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.layout-header-bar{
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+.div-bar{
+  margin-left: 200px;
+}
 </style>
 
 <script>
-  export default {
-    data() {
+
+import VideoPlay from "./VideoPlay";
+
+export default {
+  components: {
+    VideoPlay
+  },
+  methods:{
+    handleClose(){
+      console.log("close方法")
+    },
+    handleOpen(){
+      console.log("open方法")
+    },
+  },
+  data() {
       return {
-        
+
       }
     }
   };
