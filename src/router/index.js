@@ -3,7 +3,8 @@ import Router from 'vue-router'
 import Main from '@/components/Main.vue'
 import NotFind from '@/components/NotFind.vue'
 import VideoPlay from '@/components/VideoPlay'
-import Video from "@/components/Video.vue"
+import infomation from "@/components/infomation";
+
 
 Vue.use(Router)
 
@@ -27,6 +28,11 @@ export default new Router({
       path: '/video',
       name: 'video',
       component: VideoPlay
+    },
+    {
+      path: '/infomation',
+      name: 'infomation',
+      component: infomation
     }
   ]
 })

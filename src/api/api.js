@@ -59,18 +59,17 @@ export const postSpeedLimit = (speed) => {return axios.post(`http://localhost:80
 export const getVideo = (video_path,speed) => {return axios(
     {
       methods: 'get',
-	    url: 'http://localhost:8000/api/VideoYolo/',
+	    url: 'http://10.252.74.129:8000/data/VideoYolo/',
 	    params: {
-            video_path: video_path,
-            speed: speed
+            video_path: video_path
 	    }
     }
 )}
 export const postVideo = (video_path, speed) => {return axios(
     {
         methods:'post',
-        url:'http://localhost:8000/api/Video/',
-        data:{'video_path': video_path,'speed': speed},
+        url:'http://10.252.74.129:8000/data/Video/',
+        data:{'video_path': video_path},
         async:false,
     }
 )}
